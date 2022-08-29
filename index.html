@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bishalqx980.github.io</title>
+</head>
+<body onload="load()">
+    <div>
+        <h1>GitHub Live Pages <span style="font-size: 14px;"><a href="https://bishalqx980.github.io">- bishalqx980.github.io</a></span></h1>
+        <hr>
+        <li><a href="https://bishalqx980.github.io" onmouseover="home()" onmouseleave="common()">/...</a></li>
+        <li><a href="https://bishalqx980.github.io/PS3" onmouseover="ps3()" onmouseleave="common()">PS3</a></li>
+        <li><a href="https://bishalqx980.github.io/PS4" onmouseover="ps4()" onmouseleave="common()">PS4</a></li>
+        <li><a href="https://bishalqx980.github.io/PlayStation" onmouseover="ps()" onmouseleave="common()">PlayStation</a></li>
+        <li><a href="https://bishalqx980.github.io/TelegramMessageSender" onmouseover="tg()" onmouseleave="common()">TelegramMessageSender</a></li>
+        <br>
+        <li><a href="https://bishalqx980.github.io/bishalqx980">@bishalqx980 Profile</a></li>
+        <br><br>
+        <p id="update" style="color: rgb(255, 100, 0);">» All rights reserved to <a href="https://github.com/bishalqx980">@bishalqx980</a></p>
+        <br>
+        <p id="info"></p>
+    </div>
+
+    <style>
+        body {
+            margin: auto;
+            width: 80%;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 100, 255);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        function common() {
+            document.getElementById('update').innerHTML = '» All rights reserved to <a href="https://github.com/bishalqx980">@bishalqx980</a>'
+        }
+        function home() {
+            document.getElementById('update').innerHTML = '» Reload the page!'
+        }
+        function ps3() {
+            document.getElementById('update').innerHTML = '» Open PS3 Mod/Jailbreak/Exploit page!'
+        }
+        function ps4() {
+            document.getElementById('update').innerHTML = '» Open PS4 Mod/Jailbreak/Exploit page!'
+        }
+        function ps() {
+            document.getElementById('update').innerHTML = '» PlayStation Random Site/Tools Page...'
+        }
+        function tg() {
+            document.getElementById('update').innerHTML = '» Telegram Message Sender by Telegram BOT'
+        }
+        function load() {
+            document.getElementById('info').innerHTML = navigator.userAgent
+        }
+    </script>
+</body>
+</html>
