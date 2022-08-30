@@ -4,56 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bishalqx980.github.io</title>
+    <title>bishalqx980</title>
 </head>
-<body>
-    <div>
-        <h1>GitHub Live Pages <span style="font-size: 14px;"><a href="https://bishalqx980.github.io">- bishalqx980.github.io</a></span></h1>
-        <hr>
-        <li><a href="https://bishalqx980.github.io" onmouseover="home()" onmouseleave="common()">/...</a></li>
-        <li><a href="https://bishalqx980.github.io/PS3" onmouseover="ps3()" onmouseleave="common()">PS3</a></li>
-        <li><a href="https://bishalqx980.github.io/PS4" onmouseover="ps4()" onmouseleave="common()">PS4</a></li>
-        <li><a href="https://bishalqx980.github.io/PlayStation" onmouseover="ps()" onmouseleave="common()">PlayStation</a></li>
-        <li><a href="https://bishalqx980.github.io/TelegramMessageSender" onmouseover="tg()" onmouseleave="common()">TelegramMessageSender</a></li>
-        <br>
-        <li><a href="https://bishalqx980.github.io/bishalqx980">@bishalqx980 Profile</a></li>
-        <br><br>
-        <p id="update" style="color: rgb(255, 100, 0);">» All rights reserved to <a href="https://github.com/bishalqx980">@bishalqx980</a></p>
-        <br>
-    </div>
+<body onload="load()">
+    <h1>» My GitHub Live Page's <span style="font-size: 12px;">- bishalqx980</span></h1>
+    <div class="div0">
+        <a href="https://bishalqx980.github.io/PS3"><button class="btn" onmouseover="ps3()" onmouseleave="common()" onmouseover="ps3()" onmouseleave="common()">PS3</button></a>
+        <a href="https://bishalqx980.github.io/PS4"><button class="btn" onmouseover="ps4()" onmouseleave="common()">PS4</button></a>
+        <a href="https://bishalqx980.github.io/PlayStation"><button class="btn" onmouseover="ps()" onmouseleave="common()">PlayStation</button></a>
+        <a href="https://bishalqx980.github.io/TelegramMessageSender"><button class="btn" onmouseover="tg()" onmouseleave="common()">Telegram Message Sender</button></a>
+        <a href="https://bishalqx980.github.io/bishalqx980"><button class="btn" onmouseover="pro()" onmouseleave="common()" style="color: rgb(255, 0, 0);margin-left: 1%;">@bishalqx980</button></a>
+    </div><br>
+
+    <textarea name="" id="log" cols="30" rows="10" readonly placeholder="Status area..."></textarea>
 
     <style>
         body {
+            width: 98%;
             margin: auto;
-            width: 80%;
         }
-        a {
-            text-decoration: none;
-            color: rgb(0, 100, 255);
+        .div0 {
+            padding: 15px;
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px rgb(0, 100, 255);
         }
-        a:hover {
-            text-decoration: underline;
+        .btn {
+            background-color: rgb(32, 33, 36);
+            color: rgb(255, 255, 0);
+            padding: 10px;
+            box-shadow: 0px 0px 5px;
+            cursor: pointer;
+            border-radius: 7px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        textarea {
+            width: 100%;
+            height: 50px;
+            resize: none;
+            border: solid 1px rgb(200, 200, 200);
+            border-radius: 3px;
+            outline: none;
+            font-weight: bold;
         }
     </style>
 
     <script>
-        function common() {
-            document.getElementById('update').innerHTML = '» All rights reserved to <a href="https://github.com/bishalqx980">@bishalqx980</a>'
+        function load() {
+            var check = screen.width;
+            if (check < 550) {
+                document.getElementById('log').innerHTML = 'Your Device width is ' + check + 'px 😕! This page is desinged for minimum 550px width device, so you may experience some graphical issues!'
+            }
         }
-        function home() {
-            document.getElementById('update').innerHTML = '» Reload the page!'
+        function common() {
+            document.getElementById('log').innerHTML = ''
         }
         function ps3() {
-            document.getElementById('update').innerHTML = '» Open PS3 Mod/Jailbreak/Exploit page!'
+            document.getElementById('log').innerHTML = 'PS3 Xploit (Unofficial), Mod/Jailbreak Site...'
         }
         function ps4() {
-            document.getElementById('update').innerHTML = '» Open PS4 Mod/Jailbreak/Exploit page!'
+            document.getElementById('log').innerHTML = 'PS4 Mod/Jailbreak Site...'
         }
         function ps() {
-            document.getElementById('update').innerHTML = '» PlayStation Random Site/Tools Page...'
+            document.getElementById('log').innerHTML = 'PlayStation Tool & Some Usefull site [Explore Yourself]'
         }
         function tg() {
-            document.getElementById('update').innerHTML = '» Telegram Message Sender by Telegram BOT'
+            document.getElementById('log').innerHTML = 'Telegram Message Sender by Telegram BOT // Based on Telegram API'
+        }
+        function pro() {
+            document.getElementById('log').innerHTML = 'My Profile!'
         }
     </script>
 </body>
