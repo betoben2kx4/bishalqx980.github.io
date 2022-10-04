@@ -1,0 +1,101 @@
+body {
+    /*background: url("bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: rgb(53, 54, 58);
+    color: rgb(255, 255, 0);
+    font-family: sans-serif;
+}
+.div0 {
+    background-color: rgb(32, 33, 36);
+    padding: 5px;
+    border-radius: 5px;
+}
+#date {
+    float: left;
+    font-weight: bold;
+}
+#clock {
+    float: right;
+    font-weight: bold;
+}
+.title {
+    text-align: center;
+}
+#log {
+    text-align: center;
+}
+.ConsoleTxT {
+    text-align: center;
+}
+.btnSec {
+    text-align: center;
+}
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(60, 60, 150);
+    width: 200px;
+    margin-top: 2%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 0px 3px 1px rgb(0, 100, 255);
+}
+.NKH {
+    text-align: center;
+}
+.btn2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(60, 60, 150);
+    width: 250px;
+    margin-top: 2%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn2:hover {
+    box-shadow: 0px 3px 1px rgb(255, 0, 100);
+}
+.bottomSec {
+    background-color: rgb(32, 33, 36);
+    bottom: 1%;
+    position: fixed;
+    width: 98%;
+    padding: 5px;
+    font-size: 14px;
+    font-style: italic;
+    border-radius: 5px;
+}
+.bishalqx980 {
+    text-shadow: 0px 0px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    animation: colorChange 30s infinite;
+}
+.bishalqx980:hover {
+    text-decoration: underline;
+}
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 255, 0);
+    }
+    25% {
+        color: rgb(255, 0, 100);
+    }
+    50% {
+        color: rgb(0, 100, 255);
+    }
+    100% {
+        color: rgb(255, 255, 0);
+    }
+}

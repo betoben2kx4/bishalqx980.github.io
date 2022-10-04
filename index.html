@@ -4,94 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>https://bishalqx980.github.io/</title>
-    <link rel="shortcut icon" href="img.png" type="image/x-icon">
-    <style>
-        body {
-            font-style: italic;
-            font-family: comic sans ms;
-        }
-        .div0 {
-            background-color: rgb(240, 240, 240);
-            border-radius: 2px;
-            padding: 20px;
-            box-shadow: 0px 0px 3px;
-        }
-        .title {
-            font-style: normal;
-            font-size: 22px;
-            font-weight: bold;
-            font-family: system-ui;
-        }
-        #loghelper {
-            display: none;
-        }
-        .div1 {
-            padding: 20px;
-            border: none;
-            box-shadow: 0px 0px 1px;
-        }
-        .btn {
-            border: none;
-            box-shadow: 0px 0px 2px;
-            padding: 5px;
-            border-radius: 2px;
-            font-weight: bold;
-            font-family: system-ui;
-            cursor: pointer;
-            margin-top: 1%;
-            margin-bottom: 1%;
-        }
-        .bishalqx980 {
-            text-decoration: none;
-            color: rgb(0, 100, 255);
-        }
-        .bishalqx980:hover {
-            text-decoration: underline;
-        }
-    </style>
-
-    <script>
-        function ps3() {
-            document.getElementById('loghelper').style.display = 'contents';
-            document.getElementById('log').innerHTML = 'PS3 Exploit/Jailbreak Site!'
-        }
-        function ps4() {
-            document.getElementById('loghelper').style.display = 'contents';
-            document.getElementById('log').innerHTML = 'PS4 Exploit/Jailbreak Site!'
-        }
-        function ps5() {
-            document.getElementById('loghelper').style.display = 'contents';
-            document.getElementById('log').innerHTML = 'PS5 FW_4.03 Debug Menu Enabler'
-        }
-        function ps() {
-            document.getElementById('loghelper').style.display = 'contents';
-            document.getElementById('log').innerHTML = 'PlayStation ToolKit/etc Site!'
-        }
-        function tg() {
-            document.getElementById('loghelper').style.display = 'contents';
-            document.getElementById('log').innerHTML = 'Telegram Message Sender by BOT API'
-        }
-        function common() {
-            document.getElementById('loghelper').style.display = 'none';
-            document.getElementById('log').innerHTML = '';
-        }
-    </script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    <title>PSYCHO_HOST</title>
 </head>
-<body>
+<body onload="load()">
     <div class="div0">
-        <span class="title">https://bishalqx980.github.io/</span>
-    </div><br>
-    <div class="div1">
-        <span>GitHub all live page's</span><span id="loghelper"> | </span><span id="log"></span><br><br>
-        <a href="https://bishalqx980.github.io/PS3_4.84-4.89"><button class="btn" onmouseover="ps3()" onmouseout="common()">PS3_4.84-4.89</button></a>
-        <a href="https://bishalqx980.github.io/PS4_9.00"><button class="btn" onmouseover="ps4()" onmouseout="common()">PS4_9.00</button></a>
-        <a href="https://bishalqx980.github.io/PS5_4.03"><button class="btn" onmouseover="ps5()" onmouseout="common()">PS5_4.03</button></a>
-        <a href="https://bishalqx980.github.io/PlayStation"><button class="btn" onmouseover="ps()" onmouseout="common()">PlayStation</button></a>
-        <a href="https://bishalqx980.github.io/TelegramMessageSender"><button class="btn" onmouseover="tg()" onmouseout="common()">Telegram Message Sender</button></a>
+        <span id="date">{DATE}</span> <span id="clock">{Time}</span>
+        <h1 class="title">Welcome To PSYCHO_HOST</h1>
     </div>
-    <div>
-        <p>Contact Owner: <a href="https://bishalqx980.github.io/bishalqx980" class="bishalqx980">@bishalqx980</a></p>
+    <p id="log">{info}</p>
+    <h2 class="ConsoleTxT">Choose your Console!</h2>
+    <div class="btnSec">
+        <a href="https://bishalqx980.github.io/PS3_4.84-4.89"><button class="btn" onmouseover="ps3()" onmouseout="restore()">PS3 4.84-4.89 Exploit</button></a>
+        <a href="https://bishalqx980.github.io/PS4_9.00"><button class="btn" onmouseover="ps4()" onmouseout="restore()">PS4 9.00 Exploit</button></a>
+        <a href="https://bishalqx980.github.io/PS5_4.03"><button class="btn" onmouseover="ps5()" onmouseout="restore()">PS5 4.03 Exploit</button></a>
+    </div><br>
+    <div class="NKH">
+        <h2>Other Useful Site's - Playstation/Telegram - My Other Project's</h2>
+        <a href="https://bishalqx980.github.io/PlayStation"><button class="btn2" onmouseover="ps()" onmouseout="restore()">Playstation</button></a>
+        <a href="https://bishalqx980.github.io/TelegramMessageSender"><button class="btn2" onmouseover="tg()" onmouseout="restore()">Telegram Message Sender</button></a>
+    </div>
+    <div class="bottomSec">
+        <p>Web Designed & Hosted by <a href="https://bishalqx980.github.io/bishalqx980" class="bishalqx980">@bishalqx980</a></p>
+        <p><span id="jsChk">{JaveScript Enable/Disable Check}</span> / <span id="Sys">{Which System you are using}</span></p>
     </div>
 </body>
 </html>
