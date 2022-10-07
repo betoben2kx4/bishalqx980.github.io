@@ -1,5 +1,5 @@
 function load() {
-    showdate();jsChk();Sys();
+    showdate();
 }
 function showdate() {
     var dt = new Date();
@@ -17,14 +17,6 @@ function showdate() {
     document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
     document.getElementById("clock").innerHTML = (Hour+":"+Minute);
     setInterval(showdate,10000);
-}
-function jsChk() {
-    document.getElementById("jsChk").innerHTML = "JavaScript Enabled: " + navigator.javaEnabled()
-}
-function Sys() {
-    var idk = navigator.userAgent;
-    var SystemShow = idk.substring(idk.indexOf("5.0 (") + 19, idk.indexOf(") Apple"));
-    document.getElementById("Sys").innerHTML = "System: " + SystemShow
 }
 function restore() {
     document.getElementById("log").innerHTML = "{info}"
