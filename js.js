@@ -36,3 +36,6 @@ function ps() {
 function tg() {
     document.getElementById("log").innerHTML = "Telegram Message Sender by Telegram BOT - Based on Telegram API"
 }
+function PSNStore() {
+    document.getElementById("log").innerHTML = "Buy PlayStation Account @Low_Price!!"
+}
