@@ -19,7 +19,7 @@ function showdate() {
     setInterval(showdate,10000);
 }
 function restore() {
-    document.getElementById("log").innerHTML = "{info}"
+    document.getElementById("log").innerHTML = "∆❍X❑"
 }
 function ps3() {
     document.getElementById("log").innerHTML = "PS3 Exploit/Jailbreak - Firmware 4.84 To 4.89"
